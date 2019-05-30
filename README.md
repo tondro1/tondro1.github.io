@@ -1,6 +1,9 @@
 # tondro1.github.io
 Front end web development practice.
 
+#World Of Sonic
+A blog website for fun talking about the various "Classic" Sonic games I've played over the years.
+
 25/05/2019
 Repo created
 

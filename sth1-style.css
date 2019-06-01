@@ -1,18 +1,45 @@
-body {
+#bg {
     margin: 0;
-    font-family: monospace;
-    /*font-family: 'Karla', sans-serif;*/
 }
 
-h1, h2, h3, p, td, tr, th{
+.table-header {
+    font-family: "Rubik", sans-serif;
+    background-color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
     text-align: center;
+    font-size: 1.6rem;
+}
+
+.table-img {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    padding-top: 8em;
+    padding-bottom: 8em;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 1rem;
 }
 
 .table-par {
+    font-family: "Karla", sans-serif;
     text-align: center;
-    padding: 5em;
+    padding-top: 1.5em;
+    padding-bottom: 5em;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 1rem;
 }
 
 .header {
-    padding: 6em;
+    font-family: "Rubik", sans-serif;
+    padding-top: 7em;
+    padding-bottom: 7em;
+    background-color: rgb(136, 127, 255);
+    text-align: center;
+    font-size: 3rem;
 }

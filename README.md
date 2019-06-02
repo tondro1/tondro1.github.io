@@ -11,4 +11,7 @@ Repo created
 HTML content done-ish for the first page of the blog: Sonic the hedgehog (1991)
 
 29/05/2019
-Experimenting with the Twitter Bootstrap web framwork
+Experimenting with the Twitter Bootstrap web framework
+
+01/06/2019
+Trying to apply "responsive web design"

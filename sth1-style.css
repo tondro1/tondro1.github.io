@@ -2,11 +2,20 @@
     margin: 0;
 }
 
+.header {
+    font-family: "Rubik", sans-serif;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    background-color: rgb(136, 127, 255);
+    text-align: center;
+    font-size: 3rem;
+}
+
 .table-header {
     font-family: "Rubik", sans-serif;
     background-color: white;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     text-align: center;
     font-size: 1.6rem;
 }
@@ -18,8 +27,8 @@
 p {
     text-align: center;
     font-family: "Karla", sans-serif;
-    padding-top: 8em;
-    padding-bottom: 8em;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     padding-left: 15%;
     padding-right: 15%;
     font-size: 1rem;
@@ -33,13 +42,4 @@ p {
     padding-left: 15%;
     padding-right: 15%;
     font-size: 1rem;
-}
-
-.header {
-    font-family: "Rubik", sans-serif;
-    padding-top: 7em;
-    padding-bottom: 7em;
-    background-color: rgb(136, 127, 255);
-    text-align: center;
-    font-size: 3rem;
 }

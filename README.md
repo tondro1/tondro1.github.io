@@ -15,3 +15,6 @@ Experimenting with the Twitter Bootstrap web framework
 
 01/06/2019
 Trying to apply "responsive web design"
+
+04/06/2019
+Added more responsive web design elements to index.html: Responsive typography and responsive images.

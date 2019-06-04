@@ -1,29 +1,64 @@
-#bg {
+/*Responsive typography*/
+/*font-size: calc( #{$min_font}px + (#{$max_font} - #{$min_font}) * ( (100vw - #{$min_width}px) / ( #{$max_width} - #{$min_width}) ));*/
+
+body, html {
+    height: 100%;
     margin: 0;
+}
+  
+.bg {
+    /* The image used */
+    background-image: url("../tondro1.github.io/world-sonic-sth1-light.png");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sonic-icon {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+#sonic-text {
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform: translate(-30%, -50%);
+    font-family: "Karla", sans-serif;
+    font-size: calc( 7px + (15 - 7) * ( (100vw - 320px) / ( 1000 - 320) ));
+}
+
+.eggman-icon {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+#eggman-text {
+    position: absolute;
+    top: 50%;
+    right: 65%;
+    transform: translate(50%, -50%);
+    font-family: "Karla", sans-serif;
+    font-size: calc( 8px + (15 - 8) * ( (100vw - 320px) / ( 1000 - 320) ));
 }
 
 .header {
     font-family: "Rubik", sans-serif;
-    padding-top: 20rem;
-    padding-bottom: 20rem;
+    margin: 0;
+    padding-top: 15vw;
+    padding-bottom: 15vw;
     background-color: rgb(136, 127, 255);
     text-align: center;
-    font-size: 3rem;
+    font-size: calc( 25px + (40 - 25) * ( (100vw - 320px) / ( 1000 - 320) ));
 }
-
-.table-header {
-    font-family: "Rubik", sans-serif;
-    background-color: white;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    text-align: center;
-    font-size: 1.6rem;
-}
-
-.table-img {
-    text-align: center;
-}
-
+  
 p {
     text-align: center;
     font-family: "Karla", sans-serif;
@@ -31,15 +66,5 @@ p {
     padding-bottom: 8rem;
     padding-left: 15%;
     padding-right: 15%;
-    font-size: 1rem;
-}
-
-.table-par {
-    font-family: "Karla", sans-serif;
-    text-align: center;
-    padding-top: 1.5em;
-    padding-bottom: 5em;
-    padding-left: 15%;
-    padding-right: 15%;
-    font-size: 1rem;
+    font-size: calc( 14px + (20 - 14) * ( (100vw - 320px) / ( 1000 - 320) ));
 }

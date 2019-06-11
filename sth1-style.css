@@ -31,7 +31,7 @@ body, html {
     left: 57%;
     transform: translate(-30%, -50%);
     font-family: "Karla", sans-serif;
-    font-size: calc( 7px + (12 - 7) * ( (100vw - 320px) / ( 1000 - 320) ));
+    font-size: calc( 8px + (15 - 8) * ( (100vw - 320px) / ( 1000 - 320) ));
 }
 
 .eggman-icon {
@@ -44,7 +44,7 @@ body, html {
     position: absolute;
     top: 50%;
     right: 65%;
-    transform: translate(50%, -50%);
+    transform: translate(40%, -50%);
     font-family: "Karla", sans-serif;
     font-size: calc( 8px + (15 - 8) * ( (100vw - 320px) / ( 1000 - 320) ));
 }
@@ -52,9 +52,13 @@ body, html {
 .header {
     font-family: "Rubik", sans-serif;
     margin: 0;
+    color: rgb(35);
     padding-top: 15vw;
     padding-bottom: 15vw;
-    background-color: rgb(136, 127, 255);
+    background-image: url(../tondro1.github.io/abstract-graphic-design.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     font-size: calc( 25px + (40 - 25) * ( (100vw - 320px) / ( 1000 - 320) ));
 }

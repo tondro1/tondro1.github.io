@@ -18,3 +18,6 @@ Trying to apply "responsive web design"
 
 04/06/2019
 Added more responsive web design elements to index.html: Responsive typography and responsive images.
+
+12/06/2019
+Added a sidebar using twitter bootstrap, animations using the AOS library and an about page.

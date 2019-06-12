@@ -2,61 +2,120 @@
 <html>
     <head>
         <meta charset="utf-8">
+       
         <title>World Of Sonic - Sonic the Hedgehog (1991)</title>
+       
         <link rel="stylesheet" type="text/css" href="sth1-style.css" />  
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <div class="bg"></div>
-        <div>
-        <h2 class="header">Story</h2>
-        <p>Dr. Ivo Robotnik invades the South Island with his robit army in search of the powerful Chaos Emeralds.
-             To make matters worse, he snatches the innocent animals on the island and turns them into mechanical creatures called the "Badniks". Play as the titular character:
-              Sonic the Hedgehog to save the colorful zones of South Island and thwart Robotnik's plans of retrieving the illustrous emeralds.</p>
+        <div class="wrapper">
+                <nav id="sidebar">
+                        <div class="sidebar-header">
+                            <h3>World of Sonic</h3>
+                        </div>
+                        
+                        <ul class="list-unstyled components">
+                            <li><a href="#head"> <img src="logos/sth1.png" alt="Sonic 1 logo" height="165px" class="logo"> </a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+        
+            <div id="content">
+                <div class="bg" id="head">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <h2 class="header">Story</h2>
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <p>
+                        Dr. Ivo Robotnik invades the South Island with his robit army in search of the powerful Chaos Emeralds. 
+                        To make matters worse, he snatches the innocent animals on the island and turns them into mechanical creatures called the "Badniks". Play as the titular character: 
+                        Sonic the Hedgehog to save the colorful zones of South Island and thwart Robotnik's plans of retrieving the illustrous emeralds.
+                    </p>
+                </div>
+                <h2 class="header">Characters</h2>
+                    <div class="sonic-icon">
+                        <img src="sonic-icon.png" alt="sonic icon" width="100%">
+                        <div id="sonic-text" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                            The titular character of the game (and the entire series), <strong>Sonic The Hedgehog</strong>. He runs at the speed of sound and 
+                            he's here to save the Island, free the animals of the island from Robotnik's clutches and prevent him from getting the Chaos Emeralds.
+                        </div>
+                    </div>
+
+                    <div class="eggman-icon">
+                        <img src="eggman-icon.png" alt="eggman icon" width="100%">
+                        <div id="eggman-text" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                            <strong>Dr. Ivo Robitnik</strong>, the man using all 300 of his IQ to gain the powers of the Chaos Emeralds with the help of the mechanized army of Badniks 
+                            and conquer the world.
+                        </div>
+                    </div>
+
+                <h2 class="header">About</h2>
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <p>
+                        This is the first game in the Sonic the Hedgehog series and it made one hell of an impression. 
+                        Contrasting the usual slow paced nature of platformers during its time, 
+                        it sets out to be different by allowing players to traverse levels at blazing 
+                        speed with a character who's got attitude. Go through 6 zones as Sonic while you run fast, pass through loops, collect rings to avoid death, 
+                        defeat enemies and face off against the evil Dr. Robotnik. Collect the Chaos Emeralds yourself by going through the special 
+                        stages by accessing a gold ring at the end of a level with at least 50 rings.
+                    </p>
+                </div>
+
+                <h2 class="header">Personal Take</h2>
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <p>
+                        Personally, this is my least favorite entry of the classic games. 
+                        Though it markets itself as going fast, much of the game is platforming oriented, that's not to say it is bad by any means, 
+                        I've had my share of fun with it. If you expect to go fast all the time, I'd say you'd be dissapointed with it in the first run. 
+                        Yes I say the first run, because this game actually has a lot of replay value, the core appeal of the series is to learn the intricacies 
+                        of the levels and become good enough so that you earn the speed yourself through sheer skill. For now I don't actually have the patience 
+                        to go through that endeavor but I know that if I did, I'd probably have more fun with this game. Also the special stages are bogus, as in, 
+                        no one actually likes that stuff, it's mostly annoying to deal with and you need to do it at least 6 times to get the "good ending" of the game.
+                    </p>
+                </div>
+
+                <h3 class="header">Where to buy</h3>
+                <div data-aos="fade-down" data-aos-anchor-placement="bottom-bottom">
+                    <p>
+                        You can buy the game off of steam and off the google play store/apple store. Preferably get the mobile version as
+                        it's more refined than the steam version, which is basically a 1:1 port of the genesis version of the game.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div>
-        <h2 class="header">Characters</h2>
-        <div class="sonic-icon">
-            <img src="sonic-icon.png" alt="sonic icon" width="100%">
-            <div id="sonic-text">The titular character of the game (and the entire series), <strong>Sonic The Hedgehog</strong>. He runs at the speed of sound and
-                 he's here to save the Island, free the animals of the island from Robotnik's clutches and prevent him from getting the Chaos Emeralds.</div>
-        </div>
-        <div class="eggman-icon">
-            <img src="eggman-icon.png" alt="eggman icon" width="100%">
-            <div id="eggman-text"><strong>Dr. Ivo Robitnik</strong>, the man using all 300 of his IQ to gain the powers of the Chaos Emeralds with the help of the mechanized army of Badniks
-                    and conquer the world.</div>
-        </div>
-        </div>
-        <div>
-        <h2 class="header">About</h2>
-        <p>This is the first game in the Sonic the Hedgehog series and it made one hell of an impression. 
-            Contrasting the usual slow paced nature of platformers during its time, 
-            it sets out to be different by allowing players to traverse levels at blazing 
-            speed with a character who's got attitude. Go through 6 zones as Sonic while you run fast, pass through loops, collect rings to avoid death, 
-            defeat enemies and face off against the evil Dr. Robotnik. Collect the Chaos Emeralds yourself by going through the special 
-            stages by accessing a gold ring at the end of a level with at least 50 rings.</p>
-        </div>
-        <div>
-        <h2 class="header">Personal Take</h2>
-        <p>Personally, this is my least favorite entry of the classic games. 
-            Though it markets itself as going fast, much of the game is platforming oriented, that's not to say it is bad by any means, 
-            I've had my share of fun with it. If you expect to go fast all the time, I'd say you'd be dissapointed with it in the first run. 
-            Yes I say the first run, because this game actually has a lot of replay value, the core appeal of the series is to learn the intricacies 
-            of the levels and become good enough so that you earn the speed yourself through sheer skill. For now I don't actually have the patience 
-            to go through that endeavor but I know that if I did, I'd probably have more fun with this game. Also the special stages are bogus, as in, 
-            no one actually likes that stuff, it's mostly annoying to deal with and you need to do it at least 6 times to get the "good ending" of the game.</p>
-        </div>
-        <div>
-        <h3 class="header">Where to buy</h3>
-        <p>You can buy the game off of steam and off the google play store/apple store. Preferably get the mobile version as
-            it's more refined than the steam version, which is basically a 1:1 port of the genesis version of the game.</p>
-        </div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+</script>
+<script>
+    AOS.init({
+        duration: 500
+    });
+</script>
+
+
     </body>
 </html>

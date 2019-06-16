@@ -2,23 +2,72 @@
 <html>
     <head>
         <meta charset="utf-8">
+        
         <title>World Of Sonic - About</title>
+        
         <link rel="stylesheet" type="text/css" href="about-style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-<body>
-    <h2 class="header">
-        About
-    </h2>
-    <p>
-        Discover the "classic" Sonic games and my personal take on them!
-    </p>
-    <p>
-        This is a fun project to practice front end web development about something that I personally am passionate about because of my childhood. 
-        The sprites that are seen here belong to Sega and Sonic Team and is in no way used for monetary gain whatsoever. Logos belong to the respective owners
-    </p>
-</body>
+    <body>
+        <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>World of Sonic</h3>
+            </div>
+            
+            <ul class="list-unstyled components">
+                <li><a href="index.html"> <img src="logos/sth1.png" alt="Sonic 1 logo" class="logo img-edit"> </a></li>
+                <li><a href="#"><img src="logos/sth2.png" alt="Sonic 2 logo" class="logo"></a></li>
+                <li><a href="#"><img src="logos/s3nk.png" alt="Sonic 3 & Knuckles" class="logo"></a></li>
+                <li><a href="#"><img src="logos/sm.png" alt="Sonic Mania" class="logo img-edit"></a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
 
+
+
+        <!--CONTENT-->
+        <div id="content">
+        <div class="header">
+        <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="head-text">About</div>
+        </div>
+        <p>
+            Discover the "classic" Sonic games and my personal take on them!
+        </p>
+        <p>
+            This is a fun project to practice front end web development about something that I personally am passionate about because of my childhood. 
+            The sprites that are seen here belong to Sega and Sonic Team and is in no way used for monetary gain whatsoever. Logos belong to the respective owners
+        </p>
+        </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+        <script>
+            AOS.init({
+                duration: 500
+            });
+        </script>
+
+    </body>
 </html>

@@ -1,22 +1,91 @@
-body, html {
+#content, body, html {
     height: 100%;
     margin: 0;
 }
 
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
 .header {
-    font-family: "Rubik", sans-serif;
-    margin: 0;
-    color: black;
-    padding-top: 5em;
-    padding-bottom: 5em;
     background-image: url(../tondro1.github.io/abstract-graphic-design-red-2.png);
+    margin: 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/*SIDEBAR*/
+
+h3 {
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+    font-family: "Rubik", sans-serif;
+    font-size: calc( 11px + (25 - 11) * ( (100vw - 320px) / ( 1000 - 320) ));
+}
+
+#sidebarCollapse {
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+
+#sidebar {
+    background-color: rgb(131, 66, 244);
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 100vh;
+    margin-left: -400px;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    background-color: rgb(131, 66, 244);
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.logo {
+    height: 120px;
+}
+
+#sidebar ul li a:hover {
+    color: rgb(131, 66, 244);
+    background: #fff;
+    text-decoration: none;
+}
+
+#sidebar ul li a {
+    font-family: "Rubik", sans-serif;
+    font-size: calc( 11px + (25 - 11) * ( (100vw - 320px) / ( 1000 - 320) ));
+    color: white;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*CONTENT*/
+
+.head-text {
+    color: black;
+    font-family: "Rubik", sans-serif;
     text-align: center;
     font-size: calc( 25px + (40 - 25) * ( (100vw - 320px) / ( 1000 - 320) ));
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
-  
+
 p {
     text-align: center;
     font-family: "Karla", sans-serif;

@@ -27,10 +27,7 @@
 */
 
 .bg {
-    /* The image used */
     background-image: url("../tondro1.github.io/world-sonic-sth1-light.png");
-  
-    /* Full height */
     height: 100vh; 
   
     /* Center and scale the image nicely */
@@ -39,9 +36,12 @@
     background-size: cover;
 }
 
+/*SIDEBAR*/
+
 h3 {
-    margin-left: 20px;
-    margin-top: 10px
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
     font-family: "Rubik", sans-serif;
     font-size: calc( 11px + (25 - 11) * ( (100vw - 320px) / ( 1000 - 320) ));
 }
@@ -69,20 +69,18 @@ h3 {
     margin: 0;
 }
 
-.logo {
-    position: relative;
-    display: block;
-    border: 0;
-}
-
 a, a:hover, a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
 }
 
+.logo {
+    height: 120px;
+}
+
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: rgb(131, 66, 244);
     background: #fff;
     text-decoration: none;
 }
@@ -92,9 +90,11 @@ a, a:hover, a:focus {
     font-size: calc( 11px + (25 - 11) * ( (100vw - 320px) / ( 1000 - 320) ));
     color: white;
     display: block;
-    margin-top: 80px;
-    padding-left: 20px;
+    text-align: center;
+    margin-top: 50px;
 }
+
+/*CONTENT*/
 
 .header {
     font-family: "Rubik", sans-serif;
@@ -120,13 +120,7 @@ p {
     font-size: calc( 14px + (20 - 14) * ( (100vw - 320px) / ( 1000 - 320) ));
 }
 
-.sonic-icon {
-    position: relative;
-    text-align: center;
-    color: black;
-}
-
-.eggman-icon {
+.icon {
     position: relative;
     text-align: center;
     color: black;

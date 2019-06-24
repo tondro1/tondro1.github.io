@@ -21,3 +21,6 @@ Added more responsive web design elements to index.html: Responsive typography a
 
 12/06/2019
 Added a sidebar using twitter bootstrap, animations using the AOS library and an about page.
+
+23/06/2019
+site is functioning now that the sidebar is done and looking clean-ish. need to add pages for sth2, 3, mania

@@ -29,13 +29,17 @@
                 <div class="sidebar-header">
                     <h3>World of Sonic</h3>
                 </div>
+
+                <button type="button" id="dismiss" class="btn btn-dark">
+                        <i class="fas fa-arrow-left"></i>
+                </button>
                 
                 <ul class="list-unstyled components">
                     <li><a href="#head"> <img src="logos/sth1.png" alt="Sonic 1 logo" class="logo img-edit"> </a></li>
                     <li><a href="#"><img src="logos/sth2.png" alt="Sonic 2 logo" class="logo"></a></li>
                     <li><a href="#"><img src="logos/s3nk.png" alt="Sonic 3 & Knuckles" class="logo"></a></li>
                     <li><a href="#"><img src="logos/sm.png" alt="Sonic Mania" class="logo img-edit"></a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a id="about-link" href="about.html">About</a></li>
                 </ul>
             </nav>
         
@@ -105,11 +109,22 @@
                 </div>
             </div>
         </div>
+        <div class="overlay"></div>
 
         <script type="text/javascript">
             $(document).ready(function () {
+                $('#dismiss, .overlay').on('click', function () {
+                    // hide sidebar
+                    $('#sidebar').removeClass('active');
+                    // hide overlay
+                    $('.overlay').removeClass('active');
+                });
+
+                
                 $('#sidebarCollapse').on('click', function () {
                     $('#sidebar').toggleClass('active');
+                    $('#sidebarCollapse').toggleClass('active');
+                    $('.overlay').addClass('active');
                 });
             });
         </script>

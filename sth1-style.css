@@ -65,14 +65,6 @@ h3 {
     transition: all 0.3s;
 }
 
-#sidebarCollapse.active {
-    position: fixed;
-    left: 50px;
-    top: 40px;
-    z-index: 2;
-    transition: all 0.3s;
-}
-
 #sidebar {
     position: fixed;
     background-color: rgb(131, 66, 244);
@@ -139,6 +131,7 @@ a, a:hover, a:focus {
 .overlay {
     display: none;
     opacity: 0;
+
 }
 
 .header {
@@ -190,20 +183,28 @@ p {
 }
 
 /*MEDIA QUERIES*/
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
+    #sidebarCollapse {
+        position: fixed;
+        left: 10px;
+        top: 15px;
+        z-index: 2;
+        transition: all 0.3s;
+    }
+
     #dismiss {
         position: absolute;
         /* top right corner of the sidebar */
-        top: 10px;
-        right: 20px;
+        top: 50px;
+        right: 75px;
     }
 
     #sidebar {
         position: fixed;
         background-color: rgb(131, 66, 244);
-        max-width: 350px;
-        height: 100vh;
-        margin-left: -350px;
+        max-width: 200px;
+        max-height: 100vh;
+        margin-left: -200px;
         transition: all 0.3s;
         z-index: 999;
     }
@@ -212,13 +213,14 @@ p {
         background-color: rgb(131, 66, 244);
         height: 100vh;
         position: fixed;
-        max-width: 350px;
-        height: 100vh;
+        max-width: 200px;
+        max-height: 100vh;
         margin: 0;
     }
 
     .logo {
-        max-height: 110px;
+        min-height: 50px;
+        max-height: 50px;
     }
 
     #about-link {
@@ -238,7 +240,8 @@ p {
     h3 {
         position: relative;
         text-align: center;
-        padding-top: 15px;
+        padding-top: 10px;
+        padding-bottom: 20px;
         font-family: "Rubik", sans-serif;
         font-size: calc( 11px + (25 - 11) * ( (100vw - 320px) / ( 1000 - 320) ));
     }

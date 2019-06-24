@@ -188,3 +188,58 @@ p {
     font-family: "Karla", sans-serif;
     font-size: calc( 8px + (15 - 8) * ( (100vw - 320px) / ( 1000 - 320) ));
 }
+
+/*MEDIA QUERIES*/
+@media (max-width: 1000px) {
+    #dismiss {
+        position: absolute;
+        /* top right corner of the sidebar */
+        top: 10px;
+        right: 20px;
+    }
+
+    #sidebar {
+        position: fixed;
+        background-color: rgb(131, 66, 244);
+        max-width: 350px;
+        height: 100vh;
+        margin-left: -350px;
+        transition: all 0.3s;
+        z-index: 999;
+    }
+    
+    #sidebar.active {
+        background-color: rgb(131, 66, 244);
+        height: 100vh;
+        position: fixed;
+        max-width: 350px;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .logo {
+        max-height: 110px;
+    }
+
+    #about-link {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+
+    #sidebar ul li a {
+        font-family: "Rubik", sans-serif;
+        font-size: calc( 20px + (25 - 20) * ( (100vw - 320px) / ( 1000 - 320) ));
+        color: white;
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    h3 {
+        position: relative;
+        text-align: center;
+        padding-top: 15px;
+        font-family: "Rubik", sans-serif;
+        font-size: calc( 11px + (25 - 11) * ( (100vw - 320px) / ( 1000 - 320) ));
+    }
+}
